@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+  <aside class="col-md-4 col-lg-3 col-sm-12" id="home-aside">
+    <div class="card meal-card">
+      <div class="d-flex flex-column" id="meal">
+        <img src="{{ img }}" class="meal-image">
+        <p><b>{{ meal_name }}</b></p>
+        {% if g.user %}
+          {% if meal_id in favorite_ids %}
+            <form method="POST"
+                  action="/users/{{g.user.id}}/{{meal_id}}/unfavorite">
+                <button class="btn btn-primary">unfavorite</button>
+            </form>
+          {% else %}
+            <form method="POST"
+                  action="/users/{{g.user.id}}/{{meal_id}}/favorite">
+              <button class="btn btn-primary" id="button">Favorite</button>
+            </form>
+          {% endif %}
+        {% else %}
+          <p><i>Sign up/Log in now to get your own collections of favorite recipes!</i></p>
+          <a href="/signup" class="btn btn-primary" id="button">Sign up</a>
+          <br>
+          <a href="/login" class="btn btn-primary" id="button">Log in</a>
+        {% endif %}
+      </div>
+    </div>
+    <br>
+    <div class="video-link">
+      <h5>Cooking demo:</h5>
+      <a href="{{ video }}"><h5>{{video}}</h5></a>
+    </div>
+  </aside>
+
+
+
+  <div class="col-lg-6 col-md-8 col-sm-12" id="recipe-area">
+    <h4>Ingredients:</h4>
+    <ul>
+    {% for ingredient in ingredients %}
+      {% if ingredient.ingredient %}
+        <li>
+          <p>{{ingredient.ingredient}}: <i>{{ingredient.measure}}</i></p>
+        </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    <br>
+    <div class="message-area">
+      <h4> Instructions: </h4>
+      {% for line in instructions %}
+      <p> {{ line }} </p>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

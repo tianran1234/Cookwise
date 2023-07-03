@@ -1,0 +1,34 @@
+{% extends 'users/details.html' %}
+
+{% block user_details %}
+
+<div class="col-sm-9">
+  <div class="row">
+    {% if recipes %}
+    <ul class="list-group">
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="card user-card">
+          <div class="card-inner">
+            {% for recipe in recipes %}
+            <li class="card-contents">
+                <a href="/recipes/{{recipe.name}}" class="card-link">
+                <p>{{recipe.name}}</p>
+                </a>
+                <img src="{{recipe.img}}" class="card-image">
+                <form method="POST"
+                      action="/users/{{g.user.id}}/{{meal_id}}/unfavorite">
+                  <button class="card-button">unfavorite</button>
+                </form>
+            </li>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </ul>
+    {% else %}
+    <h3>Please add recipes to your favorites first!</h3>
+    {% endif %}
+  </div>
+</div>
+
+{% endblock %}

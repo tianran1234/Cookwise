@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="row">
+    <aside class="col-md-4 col-lg-3 col-sm-12" id="home-aside">
+      <div class="card user-card">
+        <div>
+          <div class="image-wrapper">
+            <img src="{{ g.user.header_image_url }}" alt="header-image" class="card-header">
+          </div>
+          <a href="/users/{{ g.user.id }}" class="card-link">
+            <img src="{{ g.user.image_url }}"
+                 alt="Image for {{ g.user.username }}"
+                 class="card-profile-img">
+            <p>@{{ g.user.username }}</p>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="home">
+      <h1>Welcome back to Cookwise!</h1>
+      <h4>What are you craving for today?</h4>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="home">
+    <h3>What particular dish do you have in mind?</h3>
+    <form  style="z-index: 1000 !important;" id="form" action="/recipes/by_name">
+      <input name="meal_name" class="form-control" placeholder="E.g: Chickpea Fajitas" id="search">
+      <button class="btn btn-default">
+        <span class="fa fa-search"></span>
+      </button>
+    </form>
+    <div>
+      <img class="img" src="https://demuths.co.uk/img/u/images/_256x256_crop_center-center_70_none/Beetroot_Kibbeh_WebRes-3217.jpg"> 
+    </div>
+  </div>
+{% endblock %}

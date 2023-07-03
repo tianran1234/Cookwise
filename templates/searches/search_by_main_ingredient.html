@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="home">
+    <h3>What's in your fridge?</h3>
+    <form  style="z-index: 1000 !important;" id="form" action="/recipes/by_main_ingredient">
+        <input name="main_ingredient" class="form-control" placeholder="E.g: avocado" id="search">
+        <button class="btn">
+          <span class="fa fa-search"></span>
+        </button>
+    </form>
+    <div>
+      <img class="img" src="https://hips.hearstapps.com/hmg-prod/images/refrigerator-full-of-food-royalty-free-image-1596641208.jpg"> 
+    </div>
+  </div>
+{% endblock %}
