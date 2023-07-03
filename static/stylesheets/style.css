@@ -411,6 +411,20 @@ nav + .container {
   background: rgba(255, 255, 255, 0.3);
 }
 
+
+/* ============================== Search form page */
+
+#form {
+  position: relative;
+}
+
+#search-icon {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+
+
 /* ============================== Signed in Home */
 
 #home-aside > .user-card {
@@ -517,6 +531,10 @@ nav + .container {
 #recipe-area {
   margin-top: 10px;
   margin-left: 50px;
+}
+
+.form .btn {
+  margin: auto;
 }
 
 
