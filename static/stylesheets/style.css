@@ -533,8 +533,13 @@ nav + .container {
   margin-left: 50px;
 }
 
-.form .btn {
-  margin: auto;
+#favorite-form {
+  position: relative;
+}
+
+#add-btn {
+ position: relative;
+ left: 110px;
 }
 
 

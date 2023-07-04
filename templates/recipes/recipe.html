@@ -8,14 +8,14 @@
         <p><b>{{ meal_name }}</b></p>
         {% if g.user %}
           {% if meal_id in favorite_ids %}
-            <form method="POST"
+            <form id="favorite_form" method="POST"
                   action="/users/{{g.user.id}}/{{meal_id}}/unfavorite">
                 <button class="btn btn-primary">unfavorite</button>
             </form>
           {% else %}
             <form method="POST"
                   action="/users/{{g.user.id}}/{{meal_id}}/favorite">
-              <button class="btn btn-primary" id="button">Favorite</button>
+              <button class="btn btn-primary" id="add-btn">Favorite</button>
             </form>
           {% endif %}
         {% else %}
