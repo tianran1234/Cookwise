@@ -10,7 +10,7 @@
           {% if meal_id in favorite_ids %}
             <form id="favorite_form" method="POST"
                   action="/users/{{g.user.id}}/{{meal_id}}/unfavorite">
-                <button class="btn btn-primary">unfavorite</button>
+                <button class="btn btn-primary" id="del-btn">unfavorite</button>
             </form>
           {% else %}
             <form method="POST"

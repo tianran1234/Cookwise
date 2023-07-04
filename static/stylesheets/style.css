@@ -537,7 +537,8 @@ nav + .container {
   position: relative;
 }
 
-#add-btn {
+#add-btn,
+#del-btn {
  position: relative;
  left: 110px;
 }
