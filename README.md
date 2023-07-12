@@ -29,7 +29,8 @@ flask run
 ## Usage
 
 Go to the designated local host porter once the server is running.
-Here is a screen shot of the homepage:
+Here is a screen shot of the homepage:![Untitled](https://github.com/tianran1234/capstone-1/assets/115170399/dcd689e0-cc06-4cd3-b40b-1648623efc2a)
+
  
 
 A user will be able to look up recipes by various filter using the dropdown search box. 
