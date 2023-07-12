@@ -25,6 +25,12 @@ Step 3.
 flask run
 ```
 
+To run the tests:
+
+```bash
+python -m unittest test_file_name.py
+```
+
 
 ## Usage
 

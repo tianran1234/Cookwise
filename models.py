@@ -35,8 +35,6 @@ class Favorite(db.Model):
         default=datetime.utcnow(),
     )
 
-    user = db.relationship('User')
-
 
 
 class User(db.Model):
@@ -87,6 +85,7 @@ class User(db.Model):
 
     favorites = db.relationship(
         "Favorite",
+        backref='users'
     )
 
     def __repr__(self):
@@ -95,7 +94,7 @@ class User(db.Model):
    
 
     @classmethod
-    def signup(cls, username, email, password, image_url):
+    def signup(cls, username, email, password, image_url, header_image_url, bio, location):
         """Sign up user.
 
         Hashes password and adds user to system.
@@ -108,6 +107,9 @@ class User(db.Model):
             email=email,
             password=hashed_pwd,
             image_url=image_url,
+            header_image_url=header_image_url,
+            bio=bio,
+            location=location
         )
 
         db.session.add(user)

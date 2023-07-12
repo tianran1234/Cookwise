@@ -6,6 +6,7 @@ from forms import UserAddForm, LoginForm, UserEditForm
 import requests
 import os
 
+
 CURR_USER_KEY = "curr_user"
 
 app = Flask(__name__)
@@ -252,6 +253,9 @@ def register():
                 password=form.password.data,
                 email=form.email.data,
                 image_url=form.image_url.data or User.image_url.default.arg,
+                header_image_url=form.header_image_url.data or User.header_image_url.default.arg,
+                bio=form.bio.data,
+                location=form.location.data
             )
             db.session.commit()
 
@@ -271,9 +275,7 @@ def register():
         # Retrieve user registration data from the form
         username = request.form.get('username')
         password = request.form.get('password')
-        
-        # Your code to register the user goes here
-        
+       
         return render_template('login.html')
     
     return render_template('users/signup.html')
@@ -287,7 +289,7 @@ def login():
 
     if form.validate_on_submit():
         user = User.authenticate(form.username.data,
-                                 form.password.data)
+                                 form.hashed_password.data)
 
         if user:
             do_login(user)
@@ -302,8 +304,6 @@ def login():
 @app.route('/logout')
 def logout():
     """Handle logout of user."""
-
-    # IMPLEMENT THIS
     
     do_logout()
     flash(f'You have successfully logged out.','success')
@@ -324,7 +324,6 @@ def show_detail(user_id):
 def profile():
     """Update profile for current user."""
 
-    # IMPLEMENT THIS
     if not g.user:
         flash("Access unauthorized.", "danger")
         return redirect("/")

@@ -14,7 +14,7 @@
                 <a href="/recipes/{{recipe.name}}" class="card-link">
                 <p>{{recipe.name}}</p>
                 </a>
-                <img src="{{recipe.img}}" class="card-image">
+                <img src="{{recipe.img}}" alt="Image for {{ recipe.name }}" class="card-image">
                 <form method="POST"
                       action="/users/{{g.user.id}}/{{meal_id}}/unfavorite">
                   <button class="card-button">unfavorite</button>

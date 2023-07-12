@@ -12,6 +12,7 @@ class UserAddForm(FlaskForm):
     location = StringField('(Optional) Location')
     bio = StringField('(Optional) Bio')
     image_url = StringField('(Optional) Image URL')
+    header_image_url = StringField('(Optional) Header Image URL')
 
 
 class LoginForm(FlaskForm):

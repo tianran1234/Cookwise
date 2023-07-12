@@ -4,7 +4,7 @@
   <aside class="col-md-4 col-lg-3 col-sm-12" id="home-aside">
     <div class="card meal-card">
       <div class="d-flex flex-column" id="meal">
-        <img src="{{ img }}" class="meal-image">
+        <img src="{{ img }}" alt="Image for {{ meal_name }}" class="meal-image">
         <p><b>{{ meal_name }}</b></p>
         {% if g.user %}
           {% if meal_id in favorite_ids %}
