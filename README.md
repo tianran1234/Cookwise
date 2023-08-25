@@ -63,12 +63,15 @@ Once click on the "Edit Profile" button on the personal page, they will be able 
 ![editprofile](https://github.com/tianran1234/Cookwise/assets/115170399/ffdf00f8-0502-46cc-9454-2789bfc93661)
 Once they are done editing and click on the submit button, or if they click on the "cancel" button, they will be directed back to their personal page.
 
-There is a "favrotie" tab on the right of the nav bar. If the user hasn't favortied any receipe yet, there will be a message reminder to add receipe to your favorites first. Otherwise, the user will see the list of the receipes that they have favorited like below:
+There is a "favrotie" tab on the right of the nav bar of any logged-in user. If the user hasn't favortied any receipe yet, there will be a message reminder to add receipe to your favorites first. Otherwise, once clicked on the tab, the user will see the list of the receipes that they have favorited like below:
 ![favorties](https://github.com/tianran1234/Cookwise/assets/115170399/e7674984-8976-48d4-a92c-d2976dc70aa9)
 If one click on the "Unfavorite" button beside a receipe, the receipe will be removed from the list.
 If they click on the name of the receipe, they will be taken to the detailed receipe page, except this time, instead of being prompt to log in/ sign up below the example picture of the dish, they will be provided with an "Unfavorite" button as shown below:
 ![Unfavorite](https://github.com/tianran1234/Cookwise/assets/115170399/ba0d903a-a674-45eb-950f-ba42ffff8e4a)
 Once clicked on the "Unfavorite", the user will be taken back to the page of list of their favorited receipes.
+
+One the top right of the nav bar of any logged-in user, there is a "Log out" tab. Once clicked, the user will be directed to the log in page with a confirmation message "You have successfully logged out" as shown below:
+![image](https://github.com/tianran1234/Cookwise/assets/115170399/021954c5-e712-44ce-826a-b590e454acc8)
 
 
 ## Testing
