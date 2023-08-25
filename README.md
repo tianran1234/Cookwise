@@ -60,7 +60,7 @@ If the user click on their profile image on the top right of the homepage, they 
 ![account](https://github.com/tianran1234/Cookwise/assets/115170399/88121d42-8d17-4c5c-9a0a-2738c3d3bed5)
 
 Once click on the "Edit Profile" button on the personal page, they will be able to edit their personal profile:
-![editprofile](https://github.com/tianran1234/Cookwise/assets/115170399/237449be-0db6-49e0-b8fa-e127a456238f)
+![account](https://github.com/tianran1234/Cookwise/assets/115170399/83bd828a-0556-4bfb-a01f-26bd0305f8ce)
 
 Once they are done editing and click on the submit button, or if they click on the "cancel" button, they will be directed back to their personal page.
 
