@@ -57,7 +57,7 @@ Once one is signed up/logged in, they will be directed to the homepage again whi
 ![loggedin](https://github.com/tianran1234/Cookwise/assets/115170399/603635cd-673e-4414-82f4-2c85c9747e46)
 
 If the user click on their profile image on the top right of the homepage, they will be led to their personal page:
-![account](https://github.com/tianran1234/Cookwise/assets/115170399/418f0d53-0349-4091-a7b8-b1b7ba9d800a)
+![Loggedin (2)](https://github.com/tianran1234/Cookwise/assets/115170399/36949138-ad8a-4913-9883-b14ff5416d22)
 
 Once click on the "Edit Profile" button on the personal page, they will be able to edit their personal profile:
 ![editprofile](https://github.com/tianran1234/Cookwise/assets/115170399/ffdf00f8-0502-46cc-9454-2789bfc93661)
