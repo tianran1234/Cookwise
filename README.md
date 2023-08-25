@@ -57,11 +57,10 @@ Once one is signed up/logged in, they will be directed to the homepage again whi
 ![Loggedin (2)](https://github.com/tianran1234/Cookwise/assets/115170399/0edb7f3a-5089-4ca2-af84-e85f22326e96)
 
 If the user click on their profile image on the top right of the homepage, they will be led to their personal page:
-![account](https://github.com/tianran1234/Cookwise/assets/115170399/88121d42-8d17-4c5c-9a0a-2738c3d3bed5)
+![account](https://github.com/tianran1234/Cookwise/assets/115170399/f42401a2-7b4a-4e4a-bab5-d7a56e8cc24b)
 
 Once click on the "Edit Profile" button on the personal page, they will be able to edit their personal profile:
-![account](https://github.com/tianran1234/Cookwise/assets/115170399/83bd828a-0556-4bfb-a01f-26bd0305f8ce)
-
+![editprofile](https://github.com/tianran1234/Cookwise/assets/115170399/40d70432-0306-43e8-afb4-c9a3a18794ac)
 Once they are done editing and click on the submit button, or if they click on the "cancel" button, they will be directed back to their personal page.
 
 There is a "favrotie" tab on the right of the nav bar of any logged-in user. If the user hasn't favortied any receipe yet, there will be a message reminder to add receipe to your favorites first. Otherwise, once clicked on the tab, the user will see the list of the receipes that they have favorited like below:
