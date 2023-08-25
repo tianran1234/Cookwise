@@ -37,8 +37,7 @@ flask run
 
 ## Usage
 
-Go to the designated local host porter (http://127.0.0.1:5000) once the server is running. Here is a screen shot of the homepage:
-![homepage](https://github.com/tianran1234/Cookwise/assets/115170399/5478814d-0b2d-4276-bd80-b68986045659)
+Go to the designated local host porter (http://127.0.0.1:5000) once the server is running. Here is a screen shot of the homepage:![homepage](https://github.com/tianran1234/Cookwise/assets/115170399/5478814d-0b2d-4276-bd80-b68986045659)
 
 A user (without logging in or signing up) can look up recipes by various filter using the dropdown search box on the top right side of the homepage, as shown below: 
 ![searchbox](https://github.com/tianran1234/Cookwise/assets/115170399/7797aeb3-433c-4b81-98af-c145d017925c)
