@@ -289,7 +289,7 @@ def login():
 
     if form.validate_on_submit():
         user = User.authenticate(form.username.data,
-                                 form.hashed_password.data)
+                                 form.password.data)
 
         if user:
             do_login(user)
